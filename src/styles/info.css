@@ -1,0 +1,388 @@
+/* Info Page Styles */
+.info-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #f4fafd;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header Section */
+.info-header {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-header p {
+  font-size: 1.3rem;
+  margin: 15px auto;
+  max-width: 800px;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.info-content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Water Facts Section */
+.facts-section {
+  margin-bottom: 60px;
+}
+
+.facts-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.facts-section h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.fact-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-10px);
+}
+
+.fact-icon {
+  height: 120px;
+  background: linear-gradient(45deg, #e1f5fe, #b3e5fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #0288d1;
+}
+
+.fact-content {
+  padding: 20px;
+}
+
+.fact-content h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.fact-content p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Water Conservation Tips */
+.tips-section {
+  margin-bottom: 60px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tips-list {
+  counter-reset: tips-counter;
+  list-style: none;
+  padding: 0;
+}
+
+.tip-item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 25px;
+  counter-increment: tips-counter;
+}
+
+.tip-item:before {
+  content: counter(tips-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tip-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.tip-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Interactive Water Usage Calculator */
+.calculator-section {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.calculator-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.calculator-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calc-group {
+  margin-bottom: 20px;
+}
+
+.calc-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.calc-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.calc-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.calc-btn {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.calc-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+
+.result-box.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.result-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.result-text {
+  color: #555;
+}
+
+/* Resources Section */
+.resources-section {
+  margin-bottom: 60px;
+}
+
+.resources-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.resource-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.resource-image {
+  height: 150px;
+  background: linear-gradient(45deg, #e0f7fa, #b3e5fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0288d1;
+  font-size: 3rem;
+}
+
+.resource-content {
+  padding: 20px;
+}
+
+.resource-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.resource-content p {
+  margin: 0 0 15px 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.resource-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.resource-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fact-card,
+.tip-item,
+.resource-card {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.fact-card:nth-child(2),
+.tip-item:nth-child(2),
+.resource-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fact-card:nth-child(3),
+.tip-item:nth-child(3),
+.resource-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.fact-card:nth-child(4),
+.tip-item:nth-child(4),
+.resource-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .info-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .info-header p {
+    font-size: 1.1rem;
+  }
+
+  .facts-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-header h1 {
+    font-size: 2rem;
+  }
+
+  .tip-item {
+    padding-left: 60px;
+  }
+}
+

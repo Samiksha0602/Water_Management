@@ -1,0 +1,88 @@
+/* System Check Page Styles */
+.system-check {
+  font-family: "Poppins", sans-serif;
+  background: #f4fafd;
+  color: #333;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header Section */
+.system-header {
+  background: linear-gradient(
+    135deg,
+    #007bff,
+    #00c6ff
+  );
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.system-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.system-header p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Status Cards */
+.status-cards {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 20px;
+}
+
+.status-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-5px);
+}
+
+.status-card h3 {
+  color: #007bff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.status-card span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .system-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .system-header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .system-header h1 {
+    font-size: 2rem;
+  }
+}

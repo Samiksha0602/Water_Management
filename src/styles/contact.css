@@ -1,0 +1,266 @@
+/* Contact Page Styles */
+.contact-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #f4fafd;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header Section */
+.contact-header {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-header p {
+  font-size: 1.3rem;
+  margin: 15px auto;
+  max-width: 800px;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.contact-content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Form */
+.contact-form {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.contact-form h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #00c6ff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Contact Info */
+.contact-info {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.contact-info h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #00c6ff;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: #e6f4ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.info-icon i {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.info-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info-text p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  background: #eee;
+  position: relative;
+}
+
+.map-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+/* Social Media Section */
+.social-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social-section h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background: #007bff;
+  color: white;
+}
+
+/* Animation for form */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-form,
+.contact-info {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.contact-info {
+  animation-delay: 0.2s;
+}
+
